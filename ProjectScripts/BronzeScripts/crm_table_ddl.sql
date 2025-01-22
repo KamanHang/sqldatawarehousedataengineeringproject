@@ -1,4 +1,6 @@
 
+-- Purpose: Below Queries are for creating table for CRM and ERP Dataset
+
 BEGIN;
 
 CREATE TABLE bronze.crm_cust_info (
@@ -31,6 +33,24 @@ CREATE TABLE bronze.crm_sales_details (
     sls_sales INT,
     sls_quantity INT,
     sls_price INT
+);
+
+CREATE TABLE bronze.erp_loc_a101 (
+	CID VARCHAR(50),
+	CNTRY VARCHAR(50)
+);
+
+CREATE TABLE bronze.erp_cust_az12 (
+	CID VARCHAR(50),
+	BDATE DATE,
+	GEN VARCHAR(50)
+);
+
+CREATE TABLE bronze.erp_px_cat_g1v2 (
+	ID VARCHAR(50),
+	CAT VARCHAR(50),
+	SUBCAT VARCHAR(50),
+	MAINTENANCE VARCHAR(50)
 );
 
 COMMIT;
