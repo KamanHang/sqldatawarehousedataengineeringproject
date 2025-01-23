@@ -13,7 +13,7 @@ WARNING:
     and ensure you have proper backups before running this script.
 */
 
-DROP DATABASE IF EXISTS "DataWarehouse";
+-- DROP DATABASE IF EXISTS "DataWarehouse";
 
 CREATE DATABASE "DataWarehouse"
     WITH
@@ -28,6 +28,6 @@ CREATE DATABASE "DataWarehouse"
 
 -- Run the below Script Seperately 
 
-CREATE SCHEMA bronze;
-CREATE SCHEMA silver;
-CREATE SCHEMA gold;
+-- CREATE SCHEMA bronze;
+-- CREATE SCHEMA silver;
+-- CREATE SCHEMA gold;
