@@ -1,0 +1,11 @@
+# Handling Duplicate Data by Primary Values
+- Using Row_Number()
+- I calculated the row_number of those records which are duplicate based upon their creation date and chose only the recent record.
+
+# Handling Spaces in String Data
+- Using TRIM() for removing leading and trailing spaced
+
+# Data Standardization and Consistency
+- Using CASE WHEN statement for data standardization like for M for Male and F for Female in cst_gndr column
+- Similarly using CASE WHEN statement for data standardization like M for Married and S for Single in cst_marital_status column.
+
