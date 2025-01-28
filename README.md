@@ -1,5 +1,5 @@
 # SQL Data Warehouse Project
-🎯 This Data Engineering Project Focuses into learning different Data Engineer Skills:
+🎯 This Data Engineering Project Focuses into learning different industry based Data Engineer Skills:
 - Data Modeling
 - Data Warehouse Design
 - ETL Pipeline Development
