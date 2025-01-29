@@ -4,7 +4,7 @@ prd_id,
 REPLACE(SUBSTRING(prd_key,1,5),'-','_') AS cat_id, -- Will be used For joining erp_px_cat_g1v2 table
 SUBSTRING(prd_key,7,LENGTH(prd_key)) AS prd_key, -- Will be used for joining sales_details table
 prd_nm,
-COALESCE(prd_cost, 0), -- Replacing Null Values with Zero
+COALESCE(prd_cost, 0) AS prd_cost, -- Replacing Null Values with Zero
 CASE UPPER(TRIM(prd_line)) 
 	WHEN 'M' THEN 'Mountain'
 	WHEN 'R' THEN 'Road'
