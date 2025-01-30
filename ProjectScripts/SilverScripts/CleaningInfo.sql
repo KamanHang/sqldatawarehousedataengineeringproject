@@ -36,6 +36,7 @@ prd_end_dt
 FROM bronze.crm_prd_info
 WHERE prd_key IN ('AC-HE-HL-U509-R', 'AC-HE-HL-U509');
 
-SELECT * FROM silver.crm_prd_info;
 
+-- CRM Sales Details
+SELECT * FROM silver.crm_sales_details;
 
