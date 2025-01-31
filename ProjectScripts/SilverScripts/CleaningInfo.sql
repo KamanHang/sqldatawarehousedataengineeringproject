@@ -37,6 +37,86 @@ FROM bronze.crm_prd_info
 WHERE prd_key IN ('AC-HE-HL-U509-R', 'AC-HE-HL-U509');
 
 
--- CRM Sales Details
-SELECT * FROM silver.crm_sales_details;
 
+-- Checking if product key and customer id from sales details table can be connected and doesn't have any issue with product and customer table
+SELECT 
+* 
+FROM bronze.crm_sales_details
+WHERE sls_prd_key NOT IN (SELECT prd_key FROM silver.crm_prd_info);
+
+SELECT 
+* 
+FROM bronze.crm_sales_details
+WHERE sls_cust_id NOT IN (SELECT cst_id FROM silver.crm_cust_info);
+
+
+-- Converting integer date from sales details table to actual date data type
+SELECT 
+sls_ord_num,
+sls_prd_key,
+sls_cust_id,
+CASE WHEN sls_order_dt = 0 OR LENGTH(CAST(sls_order_dt as VARCHAR)) != 8 THEN NULL
+	 ELSE CAST(CAST(sls_order_dt as VARCHAR) as DATE)
+END AS sls_order_dt
+FROM bronze.crm_sales_details;
+
+
+-- Checking the ORDER of all the dates
+SELECT 
+sls_ord_num,
+sls_prd_key,
+sls_cust_id,
+CASE WHEN sls_order_dt = 0 OR LENGTH(CAST(sls_order_dt as VARCHAR)) != 8 THEN NULL
+	 ELSE CAST(CAST(sls_order_dt as VARCHAR) as DATE)
+END AS sls_order_dt,
+
+CASE WHEN sls_ship_dt = 0 OR LENGTH(CAST(sls_ship_dt as VARCHAR)) != 8 THEN NULL
+	 ELSE CAST(CAST(sls_ship_dt as VARCHAR) as DATE)
+END AS sls_ship_dt,
+
+CASE WHEN sls_due_dt = 0 OR LENGTH(CAST(sls_due_dt as VARCHAR)) != 8 THEN NULL
+	 ELSE CAST(CAST(sls_due_dt as VARCHAR) as DATE)
+END AS sls_due_dt,
+sls_sales,
+sls_quantity,
+sls_price
+FROM bronze.crm_sales_details WHERE sls_order_dt > sls_ship_dt OR sls_order_dt > sls_due_dt;
+
+-- Check if sls_sales follows the business rule or not which is sales = quantity * price
+SELECT 
+sls_sales , sls_quantity , sls_price
+FROM bronze.crm_sales_details 
+WHERE sls_sales != sls_quantity * sls_price
+OR sls_sales IS NULL OR sls_quantity IS NULL OR sls_price IS NULL 
+OR sls_sales < 0 OR sls_quantity < 0 OR sls_price < 0
+ORDER BY  sls_sales , sls_quantity , sls_price;
+
+-- We cannot just directly transofrm the data by own
+-- But communicate with source system expert for decision
+-- However We have set few rules as of now for data accuracy
+
+-- SELECT sls_sales , sls_quantity , sls_price
+-- FROM bronze.crm_sales_details 
+-- WHERE sls_sales != sls_quantity * sls_price
+-- OR sls_sales IS NULL OR sls_quantity IS NULL OR sls_price IS NULL 
+-- OR sls_sales < 0 OR sls_quantity < 0 OR sls_price < 0
+-- ORDER BY  sls_sales , sls_quantity , sls_price;
+
+
+-- If Sales is negative, null, or zero derive it using quantity and price
+-- If Price is zero or null, calculate it using sales and quantity
+-- If Price is negative, convert it to a positive value
+
+SELECT
+sls_sales,
+sls_quantity,
+sls_price
+FROM silver.crm_sales_details
+WHERE sls_sales <=0 
+	OR sls_quantity <=0 
+	OR sls_price <=0 
+	OR sls_sales IS NULL 
+	OR sls_quantity IS NULL
+	OR sls_price IS NULL
+	OR sls_sales != sls_quantity * sls_price
+ORDER BY sls_sales, sls_quantity, sls_price;
