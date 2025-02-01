@@ -90,23 +90,17 @@ WHERE sls_sales != sls_quantity * sls_price
 OR sls_sales IS NULL OR sls_quantity IS NULL OR sls_price IS NULL 
 OR sls_sales < 0 OR sls_quantity < 0 OR sls_price < 0
 ORDER BY  sls_sales , sls_quantity , sls_price;
-
+-----------------------------------------------------------------
+-----------------------------------------------------------------
 -- We cannot just directly transofrm the data by own
 -- But communicate with source system expert for decision
 -- However We have set few rules as of now for data accuracy
 
--- SELECT sls_sales , sls_quantity , sls_price
--- FROM bronze.crm_sales_details 
--- WHERE sls_sales != sls_quantity * sls_price
--- OR sls_sales IS NULL OR sls_quantity IS NULL OR sls_price IS NULL 
--- OR sls_sales < 0 OR sls_quantity < 0 OR sls_price < 0
--- ORDER BY  sls_sales , sls_quantity , sls_price;
-
-
 -- If Sales is negative, null, or zero derive it using quantity and price
 -- If Price is zero or null, calculate it using sales and quantity
 -- If Price is negative, convert it to a positive value
-
+-----------------------------------------------------------------
+-----------------------------------------------------------------
 SELECT
 sls_sales,
 sls_quantity,
@@ -120,3 +114,39 @@ WHERE sls_sales <=0
 	OR sls_price IS NULL
 	OR sls_sales != sls_quantity * sls_price
 ORDER BY sls_sales, sls_quantity, sls_price;
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+---- Clearning UNWANTED Characters from the customer id----------
+SELECT DISTINCT 
+cid,
+SUBSTR(cid,1,3),
+CASE 
+	WHEN cid LIKE ('NAS%') THEN SUBSTR(cid,4,LENGTH(cid)) -- Removing NAS from the Customer ID which is the first 3 character 
+	ELSE cid
+END AS new_cid
+FROM bronze.erp_cust_az12;
+
+SELECT 
+CASE
+	WHEN bdate > CURRENT_TIMESTAMP THEN NULL
+	ELSE bdate
+END AS bdate
+FROM bronze.erp_cust_az12 WHERE bdate > CURRENT_TIMESTAMP ;
+
+-- Keep only 3 distinct values Male Female and n/a
+-- All the empty spaces, null values are replaced with not available n/a
+SELECT DISTINCT gen,
+CASE 
+	WHEN UPPER(TRIM(gen)) IN ('F', 'FEMALE') THEN 'Female'
+	WHEN UPPER(TRIM(gen)) IN ('M', 'MALE') THEN 'Male'
+	ELSE 'n/a'
+END AS gen_new
+FROM bronze.erp_cust_az12;
+
+
+
+
+
+
