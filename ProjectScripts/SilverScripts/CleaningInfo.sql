@@ -117,8 +117,7 @@ ORDER BY sls_sales, sls_quantity, sls_price;
 -----------------------------------------------------------------
 -----------------------------------------------------------------
 -----------------------------------------------------------------
------------------------------------------------------------------
----- Clearning UNWANTED Characters from the customer id----------
+
 SELECT DISTINCT 
 cid,
 SUBSTR(cid,1,3),
@@ -161,6 +160,20 @@ CASE
 END AS cntry
 FROM bronze.erp_loc_a101;
 
+-----------------------------------------------------------------
+---- Cheking if erp_pg_cat_g1v2 Table needs to cleaned----------
+-----------------------------------------------------------------
+SELECT DISTINCT id FROM bronze.erp_px_cat_g1v2;
+SELECT DISTINCT cat FROM bronze.erp_px_cat_g1v2;
+SELECT DISTINCT subcat FROM bronze.erp_px_cat_g1v2;
+SELECT DISTINCT maintenance FROM bronze.erp_px_cat_g1v2;
+-- From the above queries there is not any null or unwanted values on each column of the erp_px_cat_g1v2 table
 
+
+SELECT id FROM bronze.erp_px_cat_g1v2 WHERE id != TRIM(id);
+SELECT cat FROM bronze.erp_px_cat_g1v2 WHERE id != TRIM(cat);
+SELECT subcat FROM bronze.erp_px_cat_g1v2 WHERE id != TRIM(subcat);
+SELECT maintenance FROM bronze.erp_px_cat_g1v2 WHERE id != TRIM(maintenance);
+-- From the above queries RESULT were  empty hence there is not any empty spaces 
 
 

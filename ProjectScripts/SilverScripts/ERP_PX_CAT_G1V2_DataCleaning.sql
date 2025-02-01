@@ -1,0 +1,1 @@
+-- Since there were not any issue in data from the erp_px_cat_g1v2 Table thus Cleaning Scrip was not required
