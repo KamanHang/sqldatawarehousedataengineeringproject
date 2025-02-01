@@ -14,7 +14,7 @@ INSERT INTO silver.erp_cust_az12
 )
 SELECT 
 CASE
-	WHEN cid LIKE 'NAS%' THEN SUBSTR(cid,4,LENGTH(cid))
+	WHEN cid LIKE 'NAS%' THEN SUBSTR(cid,4,LENGTH(cid)) 
 	ELSE cid
 END AS cid,
 CASE
