@@ -1,12 +1,18 @@
-# SQL Data Warehouse Project
-🎯 This Data Engineering Project Focuses into learning different Data Engineer Skills:
-- Data Modeling
-- Data Warehouse Design
-- ETL Pipeline Development
-- Data Architect
-- Data Cleaning
+#  SQL Data Warehouse and Data Analytics Project
+This Project focuses into two different sections:
 - Data Engineering
-- Data Analytics
+- Data Analytics and Reporting
+
+## Data Engineering
+In this section of the project I have performed following tasks:
+- Implemented Medallion Architecture to develop data pipeline for more high quality data.
+- Developed ETL Pipelines (Extract, Transform, Load)
+- Extracted raw data from CRM (Customer Relationship Management) and ERP (Enterprise Resource Planning) data sources to BRONZE Layer of the Data Warehouse.
+- Performed Data Cleansing tasks for Qualitative Data (Used PL/pgSQL): Removing Duplicates, Handling Unwanted Spaces, missing and invalid data, Data Type Casting and Filtering in SILVER Layer.
+- Performed Data Modeling by creating FACTS & DIMENSIONS Table for high quality data analysis in GOLD Layer.
+
+## Data Analytics and Reporting
+-
 
 # ⛩️ Data Architecture
 
