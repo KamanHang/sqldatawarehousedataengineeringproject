@@ -5,8 +5,8 @@ This Project focuses into two different sections:
 
 ## Data Engineering
 In this section of the project I have performed following tasks:
-- Implemented Medallion Architecture to develop data pipeline for more high quality data.
-- Developed ETL Pipelines (Extract, Transform, Load)
+- Implemented Medallion Architecture to develop data pipeline for more high quality data flow.
+- Developed ETL Pipeline (Extract, Transform, Load)
 - Extracted raw data from CRM (Customer Relationship Management) and ERP (Enterprise Resource Planning) data sources to BRONZE Layer of the Data Warehouse.
 - Performed Data Cleansing tasks for Qualitative Data (Used PL/pgSQL): Removing Duplicates, Handling Unwanted Spaces, missing and invalid data, Data Type Casting and Filtering in SILVER Layer.
 - Performed Data Modeling by creating FACTS & DIMENSIONS Table for high quality data analysis in GOLD Layer.
@@ -18,7 +18,7 @@ In this section of the project I have performed following tasks:
 
 One of the important thing I learned during this project is the Medallion Data Architecture.<br>
 ETL (Extract, Transfer and Load) are the fundamentals of Data Engineering. <br> 
-However, "Medallion Data Architecture" helped me to design and build robust, scaleable data warehouse.
+"Medallion Data Architecture" helped me design and build modular and clean data warehouse.
 
 ![DataArchitecturedrawio](https://github.com/user-attachments/assets/8f124cd0-6690-4455-80d9-8d99634a1dc1)
 
