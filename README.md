@@ -24,14 +24,16 @@ ETL (Extract, Transfer and Load) are the fundamentals of Data Engineering. <br>
 
 ![DataArchitecturedrawio](https://github.com/user-attachments/assets/8f124cd0-6690-4455-80d9-8d99634a1dc1)
 
-# Exploring Business Objects
+# Data Modeling (Star Schema)
+![StarSchema](https://github.com/user-attachments/assets/21e97013-0699-4f1e-b51f-b7cecdf9ad5e)
+
 
 
 
 # Data LINEAGE
 Data Lineage is new thing I learned during this project development which helped me to track and map the flow of data into the data warehouse. <br><br>
 <i>*Note: Data Lineage will be updated as we go further into the project*</i>
-<IMG SRC = "https://raw.githubusercontent.com/KamanHang/sqldatawarehousedataengineeringproject/refs/heads/main/Data%20Lineage.png" />
+![Data Lineage](https://github.com/user-attachments/assets/96f4e8d6-993f-4913-834d-b4887e0883cf)
 
 # Data Integration
 From the Below diagram we get an idea about the connections between different CRM and ERP tables available in database. <br><br>
