@@ -1,4 +1,6 @@
 #  SQL Data Warehouse and Data Analytics Project
+This project delivers a modern data warehouse which focuses on building clean, organized data pipeline and covers important aspects such as ETL Pipeline Development, Data Cleaning, Data Modelling and Data Analytics
+## Project Division 
 This Project focuses into two different sections:
 - Data Engineering
 - Data Analytics and Reporting
@@ -12,7 +14,7 @@ In this section of the project I have performed following tasks:
 - Performed Data Modeling by creating FACTS & DIMENSIONS Table for high quality data analysis in GOLD Layer.
 
 ## Data Analytics and Reporting
--
+  *_Currently Working on Gold layer for data analytics and reporting. I will update soon!_*
 
 # ⛩️ Data Architecture
 
