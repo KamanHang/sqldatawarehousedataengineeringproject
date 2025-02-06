@@ -34,11 +34,11 @@ Medallion Architecture consist three layers which helped me design and build mod
 - **STAR SCHEMA** <br> <br>
 Star Schema is a multi-dimensional data model for organizing data in a way that makes data analytical tasks easier and helps non technical people easy to understand and get insights from the data.
 
-- ### Dimension Table
-   - dim_customers
-   - dim_products
-- ### Facts Table
-   - fact_sales
+    - ### Dimension Table
+       - dim_customers
+       - dim_products
+    - ### Facts Table
+       - fact_sales
  
  ### _For more details check [Data Catlog](https://github.com/KamanHang/sqldatawarehousedataengineeringproject/blob/main/ProjectScripts/data_catlog.md) of Gold Layer_ 
 ![StarSchema](https://github.com/user-attachments/assets/21e97013-0699-4f1e-b51f-b7cecdf9ad5e)
