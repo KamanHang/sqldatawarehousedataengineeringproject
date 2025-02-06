@@ -1,5 +1,9 @@
+
+### Things to Consider
+- The provided dataset belongs to a (Fictional Company) "Gurkha Pedal Force" - a company that sells bikes, related acessories and clothing.
 #  SQL Data Warehouse and Data Analytics Project
 This project delivers a modern data warehouse which focuses on building clean, organized data pipeline and covers important aspects such as ETL Pipeline Development, Data Cleaning, Data Modelling and Data Analytics
+
 ## Project Division 
 This Project focuses into two different sections:
 - Data Engineering
@@ -11,8 +15,13 @@ In this section of the project I have performed following tasks:<br>
 _(I have performed the entire task using PL/PostgreSQL)_
 - Implemented Medallion Architecture to develop data pipeline for more high quality data flow.
 - Developed ETL Pipeline (Extract, Transform, Load)
-- Ingested raw data from CRM (Customer Relationship Management) and ERP (Enterprise Resource Planning) data sources to BRONZE Layer.
-- Performed Data Cleansing tasks for Qualitative Data (Used PL/pgSQL): Removing Duplicates, Handling Unwanted Spaces, missing and invalid data, Data Type Casting and Filtering in SILVER Layer.
+- Ingested raw data from CRM (Customer Relationship Management) and ERP (Enterprise Resource Planning) data sources.
+- Performed:
+    - Data Cleansing tasks (Removing Duplicates, Handling Unwanted Spaces, missing and invalid data, Data Type Casting and Filtering)
+    - Data Standardization
+    - Data Normalization
+    - Data Enrichment
+    - Data Integration for Qualitative Data
 - Performed Data Modeling by creating FACTS & DIMENSIONS Table for high quality data analysis in GOLD Layer.
 
 ## Data Analytics and Reporting
