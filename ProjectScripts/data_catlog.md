@@ -38,7 +38,7 @@ This layer is designed in such a way that **non-technical, stake holders or busi
 
 ---
 
-## View: `gold.sales_orders`
+## View: `gold.fact_sales`
 
 | **Column Name**       | **Description**                                                   | **Data Type** |
 |-----------------------|-------------------------------------------------------------------|---------------|
