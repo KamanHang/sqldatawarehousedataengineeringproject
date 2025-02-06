@@ -43,16 +43,7 @@ Star Schema is a multi-dimensional data model for organizing data in a way that 
  ### _For more details check [Data Catlog](https://github.com/KamanHang/sqldatawarehousedataengineeringproject/blob/main/ProjectScripts/data_catlog.md) of Gold Layer_ 
 ![StarSchema](https://github.com/user-attachments/assets/21e97013-0699-4f1e-b51f-b7cecdf9ad5e)
 
-
-
-
 # Data LINEAGE
-Data Lineage helps us to track which helped me to track and map the flow of data into the data warehouse. <br><br>
-<i>*Note: Data Lineage will be updated as we go further into the project*</i>
+<i>*Note: Final Updated Data Lineage*</i>
 ![Data Lineage](https://github.com/user-attachments/assets/96f4e8d6-993f-4913-834d-b4887e0883cf)
-
-# Data Integration
-From the Below diagram we get an idea about the connections between different CRM and ERP tables available in database. <br><br>
-<i>*Note: Data Integration will be updated as we go further into the project*</i>
-![Integration](https://github.com/user-attachments/assets/31a25139-f89f-4c44-8ef1-2515c4760ac0)
 
