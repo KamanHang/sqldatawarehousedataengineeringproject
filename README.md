@@ -6,10 +6,12 @@ This Project focuses into two different sections:
 - Data Analytics and Reporting
 
 ## Data Engineering
-In this section of the project I have performed following tasks:
+In this section of the project I have performed following tasks:<br>
+<br>
+_(I have performed the entire task using PL/PostgreSQL)_
 - Implemented Medallion Architecture to develop data pipeline for more high quality data flow.
 - Developed ETL Pipeline (Extract, Transform, Load)
-- Extracted raw data from CRM (Customer Relationship Management) and ERP (Enterprise Resource Planning) data sources to BRONZE Layer of the Data Warehouse.
+- Ingested raw data from CRM (Customer Relationship Management) and ERP (Enterprise Resource Planning) data sources to BRONZE Layer.
 - Performed Data Cleansing tasks for Qualitative Data (Used PL/pgSQL): Removing Duplicates, Handling Unwanted Spaces, missing and invalid data, Data Type Casting and Filtering in SILVER Layer.
 - Performed Data Modeling by creating FACTS & DIMENSIONS Table for high quality data analysis in GOLD Layer.
 
@@ -17,14 +19,21 @@ In this section of the project I have performed following tasks:
   *_Currently Working on Gold layer for data analytics and reporting. I will update soon!_*
 
 # ⛩️ Data Architecture
-
-One of the important thing I learned during this project is the Medallion Data Architecture.<br>
-ETL (Extract, Transfer and Load) are the fundamentals of Data Engineering. <br> 
-"Medallion Data Architecture" helped me design and build modular and clean data warehouse.
-
 ![DataArchitecturedrawio](https://github.com/user-attachments/assets/8f124cd0-6690-4455-80d9-8d99634a1dc1)
 
+One of the important thing I was exposed during this project is the Medallion Architecture.<br>
+Medallion Architecture consist three layers which helped me design and build modular and clean data warehouse.
+- ### **Bronze Layer:**
+     - In this layer, I have ingested raw data from CRM (Customer Relationship Management) and ERP (Enterprise Resource Planning) CSV files into PostgreSQL.
+- ### **Silver Layer:**
+     - In this layer, I have performed data cleansing (Handling Null values, empty spaces), standardization, normalization, enrichment and derived columns tasks.
+- ### **Gold Layer:**
+     - In this layer, I have created **Data Model: Star Schema**, in which I have created Fact and Dimension Tables for advance data analytics.
+
 # Data Modeling (Star Schema)
+- **STAR SCHEMA**
+     - Star Schema is a multi-dimensional data model for organizing data in a way that makes data analytical tasks easier.
+     - This data model makes easier and helps non technical people easy to understand and get insights from the data.
 ![StarSchema](https://github.com/user-attachments/assets/21e97013-0699-4f1e-b51f-b7cecdf9ad5e)
 
 
