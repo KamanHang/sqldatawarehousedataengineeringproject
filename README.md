@@ -1,6 +1,6 @@
 
 ### Things to Consider
-- The provided dataset belongs to a (Fictional Company) "Gurkha Pedal Force" - a company that sells bikes, related acessories and clothing.
+- The provided dataset belongs to a (Fictional Company) "BikeHaven Collective" - a company that sells bikes, related acessories and clothing.
 #  SQL Data Warehouse and Data Analytics Project
 This project delivers a modern data warehouse which focuses on building clean, organized data pipeline and covers important aspects such as ETL Pipeline Development, Data Cleaning, Data Modelling and Data Analytics
 
