@@ -1,6 +1,6 @@
 
 ### ❗Things to Consider❗
-- The provided dataset was anonymous so I provided a fictional name (Fictional Company) "Bike Haven Collective" - a company that sells bikes, related acessories and clothing.
+The provided dataset was anonymous so I provided a fictional name "Bike Haven Collective" - a company that sells bikes, related acessories and clothing.
 #  SQL Data Warehouse and Data Analytics Project
 This project delivers a modern data warehouse which focuses on building clean, organized data pipeline and covers important aspects such as ETL Pipeline Development, Data Cleaning, Data Modelling and Data Analytics.
 
