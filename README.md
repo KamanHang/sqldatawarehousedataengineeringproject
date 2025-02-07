@@ -25,7 +25,11 @@ _(I have performed the entire task using PL/PostgreSQL)_
 - Performed Data Modeling by creating FACTS & DIMENSIONS Table for high quality data analysis in GOLD Layer.
 
 ## Data Analytics and Reporting
-  *_Currently Working on Gold layer for data analytics and reporting. I will update soon!_*
+
+- I have analyzed the sales data for different analysis created an interactive Dashboard:
+ 
+![SalesDashboard](https://github.com/user-attachments/assets/d00ba5ff-55cc-46b6-8125-35ae18a5abbc)
+
 
 # ⛩️ Data Architecture
 ![DataArchitecturedrawio](https://github.com/user-attachments/assets/8f124cd0-6690-4455-80d9-8d99634a1dc1)
