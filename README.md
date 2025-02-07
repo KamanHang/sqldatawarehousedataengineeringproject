@@ -1,15 +1,15 @@
 
-### Things to Consider
-- The provided dataset belongs to a (Fictional Company) "BikeHaven Collective" - a company that sells bikes, related acessories and clothing.
+### ❗Things to Consider❗
+- The provided dataset was anonymous so I provided a fictional name (Fictional Company) "Bike Haven Collective" - a company that sells bikes, related acessories and clothing.
 #  SQL Data Warehouse and Data Analytics Project
-This project delivers a modern data warehouse which focuses on building clean, organized data pipeline and covers important aspects such as ETL Pipeline Development, Data Cleaning, Data Modelling and Data Analytics
+This project delivers a modern data warehouse which focuses on building clean, organized data pipeline and covers important aspects such as ETL Pipeline Development, Data Cleaning, Data Modelling and Data Analytics.
 
 ## Project Division 
 This Project focuses into two different sections:
 - Data Engineering
 - Data Analytics and Reporting
 
-## Data Engineering
+## Data Engineering 👷🏻‍♂️
 In this section of the project I have performed following tasks:<br>
 <br>
 _(I have performed the entire task using PL/PostgreSQL)_
@@ -24,11 +24,11 @@ _(I have performed the entire task using PL/PostgreSQL)_
     - Data Integration for Qualitative Data
 - Performed Data Modeling by creating FACTS & DIMENSIONS Table for high quality data analysis in GOLD Layer.
 
-## Data Analytics and Reporting
+## Data Analytics and Reporting 📊
 
-- I have analyzed the sales data for different analysis created an interactive Dashboard:
+- I have analyzed the sales data for different analysis and created an interactive Power BI dashboard:
  
-![SalesDashboard](https://github.com/user-attachments/assets/d00ba5ff-55cc-46b6-8125-35ae18a5abbc)
+![PowerBI](https://github.com/user-attachments/assets/a0f7c76d-8011-431c-81d0-37d1dffd23cb)
 
 
 # ⛩️ Data Architecture
