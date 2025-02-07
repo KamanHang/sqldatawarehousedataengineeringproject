@@ -37,6 +37,10 @@ Medallion Architecture consist three layers which helped me design and build mod
 - ### **Gold Layer:**
      - In this layer, I have created **Data Model: Star Schema**, in which I have created Fact and Dimension Tables for advance data analytics.
 
+# Data LINEAGE (Data Flow)
+<i>*Note: Final Updated Data Lineage*</i>
+![Data Lineage](https://github.com/user-attachments/assets/96f4e8d6-993f-4913-834d-b4887e0883cf)
+
 # Data Modeling (Star Schema)
 - **STAR SCHEMA** <br> <br>
 Star Schema is a multi-dimensional data model for organizing data in a way that makes data analytical tasks easier and helps non technical people easy to understand and get insights from the data.
@@ -50,9 +54,7 @@ Star Schema is a multi-dimensional data model for organizing data in a way that 
  ### _For more details check [Data Catlog](https://github.com/KamanHang/sqldatawarehousedataengineeringproject/blob/main/ProjectScripts/data_catlog.md) of Gold Layer_ 
 ![StarSchema](https://github.com/user-attachments/assets/21e97013-0699-4f1e-b51f-b7cecdf9ad5e)
 
-# Data LINEAGE
-<i>*Note: Final Updated Data Lineage*</i>
-![Data Lineage](https://github.com/user-attachments/assets/96f4e8d6-993f-4913-834d-b4887e0883cf)
+
 
 ## Data Analytics and Reporting 📊
 
