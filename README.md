@@ -24,12 +24,6 @@ _(I have performed the entire task using PL/PostgreSQL)_
     - Data Integration for Qualitative Data
 - Performed Data Modeling by creating FACTS & DIMENSIONS Table for high quality data analysis in GOLD Layer.
 
-## Data Analytics and Reporting 📊
-
-- I have analyzed the sales data for different analysis and created an interactive Power BI dashboard:
- 
-![PowerBI](https://github.com/user-attachments/assets/a0f7c76d-8011-431c-81d0-37d1dffd23cb)
-
 
 # ⛩️ Data Architecture
 ![DataArchitecturedrawio](https://github.com/user-attachments/assets/8f124cd0-6690-4455-80d9-8d99634a1dc1)
@@ -59,4 +53,10 @@ Star Schema is a multi-dimensional data model for organizing data in a way that 
 # Data LINEAGE
 <i>*Note: Final Updated Data Lineage*</i>
 ![Data Lineage](https://github.com/user-attachments/assets/96f4e8d6-993f-4913-834d-b4887e0883cf)
+
+## Data Analytics and Reporting 📊
+
+- I have analyzed the sales data for different analysis and created an interactive Power BI dashboard:
+ 
+![PowerBI](https://github.com/user-attachments/assets/a0f7c76d-8011-431c-81d0-37d1dffd23cb)
 
